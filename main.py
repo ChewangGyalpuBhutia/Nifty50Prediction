@@ -58,7 +58,7 @@ with tab1:
             model.fit(df)
             
             # Create future dataframe for the next year
-            future_year = model.make_future_dataframe(periods=365)
+            future_year = model.make_future_dataframe(periods=180)
             
             # Make predictions for the next year
             forecast_year = model.predict(future_year)
